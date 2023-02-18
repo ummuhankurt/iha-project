@@ -1,0 +1,29 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+      <h1 class="title"></h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Marka</th>
+            <th>Model</th>
+            <th>Ağırlık</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in drones %}
+          <tr>
+            <td><img style="width: 200px;" src="{{d.image.url}}" alt=""></td>
+            <td>{{d.brand}}</td>
+            <td>{{d.model}}</td>
+            <td>{{d.weight}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+{% endblock %}

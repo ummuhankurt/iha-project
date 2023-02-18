@@ -1,0 +1,35 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+      <h1 class="title">IHA Kayıt Sayfası</h1>
+      <form>  
+        <div class="form-group">
+          <label for="marka">Marka:</label>
+          <input type="text" class="form-control" id="marka" name="marka">
+        </div>
+        <div class="form-group">
+          <label for="model">Model:</label>
+          <input type="text" class="form-control" id="model" name="model">
+        </div>
+        <div class="form-group">
+          <label for="agirlik">Agirlik:</label>
+          <input type="text" class="form-control" id="agirlik" name="agirlik">
+        </div>
+        <div class="form-group">
+          <label for="kategori">Kategori:</label>
+          <select class="form-control" id="kategori" name="kategori">
+            <option value="">Seçiniz</option>
+            <option value="kategori1">Kategori 1</option>
+            <option value="kategori2">Kategori 2</option>
+            <option value="kategori3">Kategori 3</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Kaydet</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+{% endblock %}
+
