@@ -1,6 +1,6 @@
 # iha-project
 # Drones
-![image](https://user-images.githubusercontent.com/63405463/223445467-221c7ce9-d497-4301-91d2-3ab86f912155.png)
+![image](https://user-images.githubusercontent.com/63405463/223470127-0f3cd431-6dc6-4565-a618-cbd3b701d5b9.png)
 
 # Add Drone
 ![image](https://user-images.githubusercontent.com/63405463/223445595-111305fa-495f-4179-9681-4f22d3c05441.png)
