@@ -1,8 +1,18 @@
 {% extends 'partials/_base.html' %}
 {% load static %}
 {% block content %}
-    <div class="container">
-      <h1 class="title"></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h1>Kategoriler</h1>
+      <ul class="list-group list-group-flush">
+        {% for category in categories %}
+        <li class="list-group-item">{{category.categoryName}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="col-md-9">
       <table class="table">
         <thead>
           <tr>
@@ -10,6 +20,7 @@
             <th>Marka</th>
             <th>Model</th>
             <th>Ağırlık</th>
+            <th>Kategori</th>
           </tr>
         </thead>
         <tbody>
@@ -19,11 +30,17 @@
             <td>{{d.brand}}</td>
             <td>{{d.model}}</td>
             <td>{{d.weight}}</td>
+            <td>{{d.category}}</td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
-  </body>
+  </div>
+
+
+</div>
+</body>
+
 </html>
 {% endblock %}
